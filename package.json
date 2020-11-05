@@ -1,0 +1,20 @@
+{
+	"name": "nodepuppeteer",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"scripts": {
+		"start": "node --max-old-space-size=8192 server",
+		"server": "nodemon --max-old-space-size=8192 server"
+	},
+	"author": "Nikolius Lau",
+	"license": "ISC",
+	"dependencies": {
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"puppeteer": "^5.4.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.6"
+	}
+}
