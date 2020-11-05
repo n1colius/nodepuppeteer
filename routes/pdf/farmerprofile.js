@@ -32,9 +32,9 @@ router.get('/:id', async(req, res) => {
     await browser.close();
 
     if(pdfprint)
-        res.status(200).send('PDF tergenerate, file bisa didownload di http://localhost:1200/'+TglWaktuStamp+'-contoh.pdf');
+        res.status(200).send({success:true, message:'PDF tergenerate, file bisa didownload di http://localhost:1200/'+TglWaktuStamp+'-contoh.pdf'});
     else
-        res.status(500).send('Generate PDF nya gagal bro/sis');
+        res.status(500).send({success:false, message:'Generate PDF nya gagal bro/sis'});
 });
 
 module.exports = router;
